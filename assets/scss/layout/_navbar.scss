@@ -1,0 +1,110 @@
+.firstsection {
+  display: flex;
+  background-image: url(/assets/img/bg-pattern-intro-mobile.svg), linear-gradient(180deg, rgba(255,143,112,1) 40%, rgba(255,61,84,0.8) 100%);
+  background-position: center;
+  background-size: 300%;
+  width: 100%;
+  border-bottom-left-radius: toRem(96);
+
+  &__navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: toRem(30);
+    margin-bottom: toRem(10);
+
+    &-topitems {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width:  100%;
+      margin-left: toRem(20);
+      margin-right: toRem(20);
+    }
+
+    &-exit {
+      display: none;
+    }
+
+    &-menuitems {
+      display: flex;
+      align-items: center;
+      background-color:  $white;
+      width: 90%;
+      flex-direction: column;
+      border: toRem(1) solid rgba(200, 200, 203, 0.4);
+      border-radius: toRem(5);
+      margin-top: toRem(20);
+      padding-top: toRem(30);
+      padding-bottom: toRem(30);
+      filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
+      display: none;
+    }
+
+    &-ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: toRem(25);
+
+
+      &--item {
+        display: flex;
+        align-items: center;
+        gap: toRem(5);
+      }
+    }
+
+    &-connectitems {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: hsl(0, 0%, 93%);
+      width: 85%;
+      border-radius: toRem(5);
+      margin-top: toRem(20);
+      margin-bottom: toRem(20);
+      padding-top: toRem(20);
+      padding-bottom: toRem(20);
+    }
+
+    &-line {
+      border: toRem(0.5) solid hsl(0, 0%, 93%);
+      width: 85%;
+      margin-bottom: toRem(20);
+      margin-top: toRem(10);
+    }
+  }
+}
+
+li {
+  list-style-type: none;
+  font-family: $overpass;
+  font-weight: 600;
+  color: $vd-gblue;
+  font-size: toRem(18);
+}
+
+.accented {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+  padding: toRem(13);
+  border-radius: toRem(100);
+  color: $white;
+  width: 40%;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
