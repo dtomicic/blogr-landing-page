@@ -9,40 +9,42 @@
   <title>Blogr Landing Page | Frontend mentor</title>
 </head>
 <body>
-  <section class="firstsection">
+  <section class="navigation">
     <div class="container">
-      <nav class="firstsection__navbar">
-        <div class="firstsection__navbar-topitems">
-          <a href="index.html" class="firstsection__navbar-homebtn"><img src="assets/img/logo.svg" alt="Logo" class="firstsection__navbar-logo"></a>
-          <img src="assets/img/icon-hamburger.svg" alt="Hamburger icon" class="firstsection__navbar-hamburger" id="hamburger-icon">
-          <img src="assets/img/icon-close.svg" alt="Icon close" class="firstsection__navbar-exit" id="close-icon">
+      <nav class="navigation__navbar">
+        <div class="navigation__navbar-topItems">
+          <a href="index.html" class="navigation__navbar-homeBtn"><img src="assets/img/logo.svg" alt="Logo" class="navigation__navbar-logo"></a>
+          <div id="togglerContainer">
+            <img src="assets/img/icon-hamburger.svg" alt="Hamburger icon" class="navigation__navbar-hamburger" id="hamburger-icon">
+            <img src="assets/img/icon-close.svg" alt="Icon close" class="navigation__navbar-exit" id="close-icon">
+          </div>
         </div>
 
-        <div class="firstsection__navbar-menuitems" id="menuitems">
-          <ul class="firstsection__navbar-ul">
-            <li class="firstsection__navbar-ul--item">Product<img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="firstsection__navbar-ul--arrow"></li>
-            <li class="firstsection__navbar-ul--item">Company<img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="firstsection__navbar-ul--arrow"></li>
-            <li class="firstsection__navbar-ul--item" id="connectbtn">Connect<img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="firstsection__navbar-ul--arrow" id="arrow"></li>
+        <div class="navigation__navbar-menuItems" id="menuItems">
+          <ul class="navigation__navbar-ul">
+            <li class="navigation__navbar-ul--item">Product<img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrow"></li>
+            <li class="navigation__navbar-ul--item">Company<img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrow"></li>
+            <li class="navigation__navbar-ul--item" id="connectBtn">Connect<img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrow" id="arrow"></li>
           </ul>
 
-          <div class="firstsection__navbar-connectitems" id="connectitems">
-            <ul class="firstsection__navbar-ul">
-              <li class="firstsection__navbar-ul--item">Contact</li>
-              <li class="firstsection__navbar-ul--item">Newsletter</li>
-              <li class="firstsection__navbar-ul--item">LinkedIn</li>
+          <div class="navigation__navbar-connectItems" id="connectItems">
+            <ul class="navigation__navbar-ul">
+              <li class="navigation__navbar-ul--item">Contact</li>
+              <li class="navigation__navbar-ul--item">Newsletter</li>
+              <li class="navigation__navbar-ul--item">LinkedIn</li>
             </ul>
           </div>
 
-          <div class="firstsection__navbar-line"></div>
+          <div class="navigation__navbar-line"></div>
           
-          <ul class="firstsection__navbar-ul">
-            <li class="firstsection__navbar-ul--item">Login</li>
-            <li class="firstsection__navbar-ul--item accented">Sign Up</li>
+          <ul class="navigation__navbar-ul">
+            <li class="navigation__navbar-ul--item">Login</li>
+            <li class="navigation__navbar-ul--item accented">Sign Up</li>
           </ul>
         </div>
       </nav>
     </div>
   </section>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/components/navigation.js"></script>
 </body>
 </html>

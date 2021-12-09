@@ -13,19 +13,19 @@
   width: 100%;
 }
 
-.firstsection {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-image: url(/assets/img/bg-pattern-intro-mobile.svg), -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ff8f70), to(rgba(255, 61, 84, 0.8)));
   background-image: url(/assets/img/bg-pattern-intro-mobile.svg), linear-gradient(180deg, #ff8f70 40%, rgba(255, 61, 84, 0.8) 100%);
   background-position: center;
-  background-size: 300%;
+  background-size: 81.25rem;
   width: 100%;
   border-bottom-left-radius: 6rem;
 }
 
-.firstsection__navbar {
+.navigation__navbar {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +39,13 @@
   margin-bottom: 0.625rem;
 }
 
-.firstsection__navbar-topitems {
+.navigation__navbar-homeBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__navbar-topItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,16 +55,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  width: 85%;
 }
 
-.firstsection__navbar-exit {
+.navigation__navbar-exit {
   display: none;
 }
 
-.firstsection__navbar-menuitems {
+.navigation__navbar-menuItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +85,7 @@
   display: none;
 }
 
-.firstsection__navbar-ul {
+.navigation__navbar-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +100,7 @@
   gap: 1.5625rem;
 }
 
-.firstsection__navbar-ul--item {
+.navigation__navbar-ul--item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,7 +110,7 @@
   gap: 0.3125rem;
 }
 
-.firstsection__navbar-connectitems {
+.navigation__navbar-connectItems {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -124,7 +128,7 @@
   padding-bottom: 1.25rem;
 }
 
-.firstsection__navbar-line {
+.navigation__navbar-line {
   border: 0.03125rem solid #ededed;
   width: 85%;
   margin-bottom: 1.25rem;
