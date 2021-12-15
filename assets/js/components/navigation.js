@@ -1,25 +1,14 @@
-var togglerContainer = document.querySelector('#togglerContainer')
-var hamburger = document.getElementById('hamburger-icon');
-var closeicon = document.getElementById('close-icon');
-var menuitems = document.getElementById('menuItems');
-var connectbtn = document.getElementById('connectBtn');
-var connectitems = document.getElementById('connectItems');
-var arrow = document.getElementById('arrow');
+var togglerContainer = document.getElementById('togglerContainer');
+var menuItems = document.getElementById('menuItems');
+var connectBtn = document.getElementById('connectBtn');
+var connectItems = document.getElementById('connectItems');
 
 togglerContainer.addEventListener('click', function(){
-  togglerContainer.classList.toggle('show');
-  if (togglerContainer.classList.contains('show')) {
-    hamburger.classList.toggle('hidden');
-    closeicon.classList.toggle('show');
-    menuitems.classList.toggle('show');
-  }else {
-    hamburger.classList.toggle('hidden');
-    closeicon.classList.toggle('show');
-    menuitems.classList.toggle('show');
-  }
+  menuItems.classList.toggle('show');
+  togglerContainer.classList.toggle('opened');
 });
 
-connectbtn.addEventListener('click', function(){
-  connectitems.classList.toggle('show');
-  arrow.classList.toggle('rotate');
+connectBtn.addEventListener('click', function(){
+  connectItems.classList.toggle('show');
+  menuItems.classList.toggle('connectOpened');
 });
