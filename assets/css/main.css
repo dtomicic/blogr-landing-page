@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(/assets/img/bg-pattern-intro-mobile.svg), -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ff8f70), to(rgba(255, 61, 84, 0.8)));
+  background-image: url(/assets/img/bg-pattern-intro-mobile.svg), linear-gradient(180deg, #ff8f70 40%, rgba(255, 61, 84, 0.8) 100%);
+  background-position: center;
+  background-size: 81.25rem;
+  width: 100%;
+  border-bottom-left-radius: 6rem;
+}
+
+.navigation__navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+
+.navigation__navbar-homeBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__navbar-topItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+}
+
+.navigation__navbar-exit {
+  display: none;
+}
+
+.navigation__navbar .opened #close-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__navbar .opened #hamburger-icon {
+  display: none;
+}
+
+.navigation__navbar-menuItems {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.0625rem solid rgba(200, 200, 203, 0.4);
+  border-radius: 0.3125rem;
+  margin-top: 1.25rem;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  -webkit-filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
+  display: none;
+}
+
+.navigation__navbar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 1.5625rem;
+}
+
+.navigation__navbar-ul--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3125rem;
+}
+
+.navigation__navbar-connectItems {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ededed;
+  width: 85%;
+  border-radius: 0.3125rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.navigation__navbar .connectOpened #arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.navigation__navbar-line {
+  border: 0.03125rem solid #ededed;
+  width: 85%;
+  margin-bottom: 1.25rem;
+  margin-top: 0.625rem;
+}
+
+li {
+  list-style-type: none;
+  font-family: "Overpass";
+  font-weight: 600;
+  color: #4b5862;
+  font-size: 1.125rem;
+}
+
+.accented {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(90deg, #ff8f70 0%, #ff3d54 100%);
+  padding: 0.8125rem;
+  border-radius: 6.25rem;
+  color: white;
+  width: 40%;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=main.css.map */
