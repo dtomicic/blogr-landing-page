@@ -1,5 +1,4 @@
 .navigation {
-  display: flex;
   background-image: url(/assets/img/bg-pattern-intro-mobile.svg), linear-gradient(180deg, rgba(255,143,112,1) 40%, rgba(255,61,84,0.8) 100%);
   background-position: center;
   background-size: toRem(1300);
@@ -88,6 +87,67 @@
       width: 85%;
       margin-bottom: toRem(20);
       margin-top: toRem(10);
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: toRem(100);
+    margin-bottom: toRem(200);
+
+    &-main {
+      color: $white;
+      font-family: $overpass;
+      font-weight: 600;
+      font-size: toRem(35);
+    }
+
+    &-secondary {
+      margin-top: toRem(15);
+      color: $white;
+      font-family: $overpass;
+      font-weight: 400;
+      font-size: toRem(17);
+      opacity: 0.8;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      gap: toRem(20);
+      margin-top: toRem(30);
+      width: 100%;
+    }
+
+    &-list--item {
+      padding: toRem(14);
+      border: solid white toRem(1);
+      border-radius: toRem(100);
+      color: $white;
+      font-size: toRem(17);
+      width: 100%;
+      
+      &:hover {
+        background-color: $white;
+        color: $l-red;
+        border: 0px;
+        cursor: pointer;
+      }
+    }
+
+    .accent {
+      background-color: $white;
+      color: $l-red;
+
+      &:hover {
+        background-color: $vl-red;
+        color: $white;
+        border: 0px;
+        cursor: pointer;
+      }
     }
   }
 }
