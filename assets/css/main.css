@@ -242,6 +242,7 @@ li {
   }
   .navigation__navbar-ul--item:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
   .navigation__navbar-ul--item.accented {
     opacity: 1;
