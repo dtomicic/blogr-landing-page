@@ -36,7 +36,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 1.875rem;
-  margin-bottom: 0.625rem;
 }
 
 .navigation__navbar-homeBtn {
@@ -117,6 +116,10 @@
   gap: 0.3125rem;
 }
 
+.navigation__navbar-ul--arrowLight {
+  display: none;
+}
+
 .navigation__navbar-connectItems {
   display: none;
   -webkit-box-orient: vertical;
@@ -133,11 +136,6 @@
   margin-bottom: 1.25rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.navigation__navbar .connectOpened #arrow {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .navigation__navbar-line {
@@ -167,7 +165,146 @@ li {
   padding: 0.8125rem;
   border-radius: 6.25rem;
   color: white;
-  width: 40%;
+  width: 9.375rem;
+}
+
+@media (min-width: 900px) {
+  #togglerContainer {
+    display: none;
+  }
+  .navigation__navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 12.5rem;
+    margin-top: 0;
+  }
+  .navigation__navbar-menuItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: transparent;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0;
+    max-width: 90%;
+    margin-top: 0;
+    -webkit-filter: none;
+            filter: none;
+    height: 10%;
+  }
+  .navigation__navbar-topItems {
+    margin-left: 3.125rem;
+    width: 10%;
+    margin-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-height: 52%;
+  }
+  .navigation__navbar-line {
+    display: none;
+  }
+  .navigation__navbar-firstItems {
+    margin-left: 1.875rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 70%;
+  }
+  .navigation__navbar-secondaryItems {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 20%;
+  }
+  .navigation__navbar-ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navigation__navbar-ul--item {
+    color: white;
+    opacity: 0.9;
+  }
+  .navigation__navbar-ul--item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .navigation__navbar-ul--item.accented {
+    opacity: 1;
+    max-width: 8.125rem;
+    width: 8.125rem;
+    background: white;
+    color: #ff7a85;
+    font-size: 1rem;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    padding: 0.8125rem;
+  }
+  .navigation__navbar-ul--item.accented:hover {
+    color: white;
+    background: #ff858f;
+    text-decoration: none;
+  }
+  .navigation__navbar-ul--arrow {
+    display: none;
+  }
+  .navigation__navbar-ul--arrowLight {
+    display: block;
+  }
+  .navigation__navbar-connectItems {
+    display: none;
+    max-width: 9.375rem;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-left: 14.375rem;
+    background: white;
+    padding-left: 0.9375rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    margin-top: 0.3125rem;
+    -webkit-filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
+  }
+  .navigation__navbar-connectItems .navigation__navbar-ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.9375rem;
+  }
+  .navigation__navbar-connectItems .navigation__navbar-ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    color: black;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+  .navigation__navbar-connectItems .navigation__navbar-ul li:hover {
+    font-weight: 700;
+    text-decoration: none;
+  }
 }
 
 .show {
@@ -177,6 +314,11 @@ li {
 }
 
 .rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.connectOpened .arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
