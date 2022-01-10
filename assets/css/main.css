@@ -172,45 +172,53 @@
   opacity: 0.8;
 }
 
-.navigation__heading-list {
+.navigation__heading-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1.25rem;
   margin-top: 1.875rem;
-  width: 100%;
 }
 
-.navigation__heading-list--item {
-  padding: 0.875rem;
-  border: solid white 0.0625rem;
+.navigation__heading-buttons--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Overpass";
+  text-decoration: none;
+  border: solid 1px white;
   border-radius: 6.25rem;
-  color: white;
-  font-size: 1.0625rem;
+  padding: 0.8125rem;
   width: 100%;
-}
-
-.navigation__heading-list--item:hover {
-  background-color: white;
-  color: #ff525d;
-  border: 0px;
-  cursor: pointer;
-}
-
-.navigation__heading .accent {
-  background-color: white;
-  color: #ff525d;
-}
-
-.navigation__heading .accent:hover {
-  background-color: #ff7a85;
   color: white;
-  border: 0px;
+  font-weight: 600;
+  font-size: 1.1875rem;
+}
+
+.navigation__heading-buttons--item:hover {
+  background-color: white;
+  color: #ff525d;
+}
+
+.navigation__heading-buttons--item.accent {
+  background-color: white;
+  color: #ff525d;
+}
+
+.navigation__heading-buttons--item.accent:hover {
+  background-color: #ff8f70;
+  color: white;
   cursor: pointer;
+  border: 0px;
 }
 
 li {

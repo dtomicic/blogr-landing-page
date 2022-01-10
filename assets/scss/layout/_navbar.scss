@@ -114,39 +114,42 @@
       opacity: 0.8;
     }
 
-    &-list {
+    &-buttons {
       display: flex;
-      flex-direction: row;
+      justify-content: center;
       gap: toRem(20);
       margin-top: toRem(30);
-      width: 100%;
-    }
 
-    &-list--item {
-      padding: toRem(14);
-      border: solid white toRem(1);
-      border-radius: toRem(100);
-      color: $white;
-      font-size: toRem(17);
-      width: 100%;
-      
-      &:hover {
-        background-color: $white;
-        color: $l-red;
-        border: 0px;
-        cursor: pointer;
-      }
-    }
-
-    .accent {
-      background-color: $white;
-      color: $l-red;
-
-      &:hover {
-        background-color: $vl-red;
+      &--item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $overpass;
+        text-decoration: none;
+        border: solid 1px $white;
+        border-radius: toRem(100);
+        padding: toRem(13);
+        width: 100%;
         color: $white;
-        border: 0px;
-        cursor: pointer;
+        font-weight: 600;
+        font-size: toRem(19);
+
+        &:hover {
+          background-color: $white;
+          color: $l-red;
+        }
+
+        &.accent {
+          background-color: $white;
+          color: $l-red;
+
+          &:hover {
+            background-color: $vl-redgrad;
+            color: $white;
+            cursor: pointer;
+            border: 0px;
+          }
+        }
       }
     }
   }
