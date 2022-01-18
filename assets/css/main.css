@@ -14,9 +14,6 @@
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-image: url(/assets/img/bg-pattern-intro-mobile.svg), -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ff8f70), to(rgba(255, 61, 84, 0.8)));
   background-image: url(/assets/img/bg-pattern-intro-mobile.svg), linear-gradient(180deg, #ff8f70 40%, rgba(255, 61, 84, 0.8) 100%);
   background-position: center;
@@ -143,6 +140,85 @@
   width: 85%;
   margin-bottom: 1.25rem;
   margin-top: 0.625rem;
+}
+
+.navigation__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6.25rem;
+  margin-bottom: 12.5rem;
+}
+
+.navigation__heading-main {
+  color: white;
+  font-family: "Overpass";
+  font-weight: 600;
+  font-size: 2.1875rem;
+}
+
+.navigation__heading-secondary {
+  margin-top: 0.9375rem;
+  color: white;
+  font-family: "Overpass";
+  font-weight: 400;
+  font-size: 1.0625rem;
+  opacity: 0.8;
+}
+
+.navigation__heading-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1.875rem;
+}
+
+.navigation__heading-buttons--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Overpass";
+  text-decoration: none;
+  border: solid 1px white;
+  border-radius: 6.25rem;
+  padding: 0.8125rem;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1875rem;
+}
+
+.navigation__heading-buttons--item:hover {
+  background-color: white;
+  color: #ff525d;
+}
+
+.navigation__heading-buttons--item.accent {
+  background-color: white;
+  color: #ff525d;
+}
+
+.navigation__heading-buttons--item.accent:hover {
+  background-color: #ff8f70;
+  color: white;
+  cursor: pointer;
+  border: 0px;
 }
 
 li {

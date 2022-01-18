@@ -1,5 +1,4 @@
 .navigation {
-  display: flex;
   background-image: url(/assets/img/bg-pattern-intro-mobile.svg), linear-gradient(180deg, rgba(255,143,112,1) 40%, rgba(255,61,84,0.8) 100%);
   background-position: center;
   background-size: toRem(1300);
@@ -88,6 +87,70 @@
       width: 85%;
       margin-bottom: toRem(20);
       margin-top: toRem(10);
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: toRem(100);
+    margin-bottom: toRem(200);
+
+    &-main {
+      color: $white;
+      font-family: $overpass;
+      font-weight: 600;
+      font-size: toRem(35);
+    }
+
+    &-secondary {
+      margin-top: toRem(15);
+      color: $white;
+      font-family: $overpass;
+      font-weight: 400;
+      font-size: toRem(17);
+      opacity: 0.8;
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: center;
+      gap: toRem(20);
+      margin-top: toRem(30);
+
+      &--item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $overpass;
+        text-decoration: none;
+        border: solid 1px $white;
+        border-radius: toRem(100);
+        padding: toRem(13);
+        width: 100%;
+        color: $white;
+        font-weight: 600;
+        font-size: toRem(19);
+
+        &:hover {
+          background-color: $white;
+          color: $l-red;
+        }
+
+        &.accent {
+          background-color: $white;
+          color: $l-red;
+
+          &:hover {
+            background-color: $vl-redgrad;
+            color: $white;
+            cursor: pointer;
+            border: 0px;
+          }
+        }
+      }
     }
   }
 }
