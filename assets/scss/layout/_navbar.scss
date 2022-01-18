@@ -48,6 +48,13 @@
       padding-bottom: toRem(30);
       filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
       display: none;
+
+      &.show {
+        display: flex;
+        position: absolute;
+        z-index: 999;
+        top: 10%;
+      }
     }
 
     &-ul {
@@ -80,6 +87,10 @@
       margin-bottom: toRem(20);
       padding-top: toRem(20);
       padding-bottom: toRem(20);
+
+      &.show {
+        display: flex;
+      }
     }
 
     &-line {
@@ -295,10 +306,6 @@ li {
       }
     }
   }
-}
-
-.show {
-  display: flex;
 }
 
 .rotate {
