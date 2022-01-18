@@ -407,4 +407,106 @@ li {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
+.firstSection {
+  width: 100%;
+  margin-top: 6.25rem;
+  background-color: white;
+}
+
+.firstSection__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.firstSection__main-heading {
+  font-family: "Overpass";
+  font-weight: 600;
+  font-size: 1.6875rem;
+  color: #1f3f5b;
+}
+
+.firstSection__secondary-image--mobile {
+  width: 100%;
+  margin-top: 2.8125rem;
+  margin-bottom: 2.8125rem;
+}
+
+.firstSection__secondary-image--desktop {
+  display: none;
+}
+
+.firstSection__secondary-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.firstSection__secondary-heading {
+  font-family: "Overpass";
+  font-weight: 600;
+  font-size: 1.6875rem;
+  color: #1f3f5b;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+
+.firstSection__secondary-paragraph {
+  font-family: "Overpass";
+  font-weight: 300;
+  font-size: 0.9375rem;
+  color: #4b5862;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 900px) {
+  .firstSection__secondary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 6.25rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .firstSection__secondary-image--mobile {
+    display: none;
+  }
+  .firstSection__secondary-image--desktop {
+    display: block;
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .firstSection__secondary-left {
+    width: 100%;
+  }
+  .firstSection__secondary-heading {
+    text-align: left;
+  }
+  .firstSection__secondary-paragraph {
+    text-align: left;
+  }
+}
 /*# sourceMappingURL=main.css.map */
