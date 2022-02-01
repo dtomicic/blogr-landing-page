@@ -84,7 +84,7 @@
     &-image--desktop {
       display: block;
       width: 100%;
-      object-position: toRem(200);
+      object-position: 13vw;
     }
 
     &-heading {
@@ -94,18 +94,6 @@
     &-paragraph {
       text-align: left;
     }
-  }
-}
-
-@media (min-width: $break-1400) {
-  .aboutEditor__contentArea-image--desktop {
-    object-position: toRem(240);
-  }
-}
-
-@media (min-width: $break-1700) {
-  .aboutEditor__contentArea-image--desktop {
-    object-position: toRem(280);
   }
 }
 

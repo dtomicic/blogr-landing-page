@@ -519,28 +519,14 @@ li {
   .aboutEditor__contentArea-image--desktop {
     display: block;
     width: 100%;
-    -o-object-position: 12.5rem;
-       object-position: 12.5rem;
+    -o-object-position: 13vw;
+       object-position: 13vw;
   }
   .aboutEditor__contentArea-heading {
     text-align: left;
   }
   .aboutEditor__contentArea-paragraph {
     text-align: left;
-  }
-}
-
-@media (min-width: 1400px) {
-  .aboutEditor__contentArea-image--desktop {
-    -o-object-position: 15rem;
-       object-position: 15rem;
-  }
-}
-
-@media (min-width: 1700px) {
-  .aboutEditor__contentArea-image--desktop {
-    -o-object-position: 17.5rem;
-       object-position: 17.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
