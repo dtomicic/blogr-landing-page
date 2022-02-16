@@ -1,101 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="assets/css/main.css">
-  <title>Blogr Landing Page | Frontend mentor</title>
-</head>
-<body>
-  <section class="navigation">
-    <div class="container">
-      <nav class="navigation__navbar">
-        <div class="navigation__navbar-topItems">
-          <a href="index.html" class="navigation__navbar-homeBtn"><img src="assets/img/logo.svg" alt="Logo" class="navigation__navbar-logo"></a>
-          <div id="togglerContainer">
-            <img src="assets/img/icon-hamburger.svg" alt="Hamburger icon" class="navigation__navbar-hamburger" id="hamburger-icon">
-            <img src="assets/img/icon-close.svg" alt="Icon close" class="navigation__navbar-exit" id="close-icon">
-          </div>
-        </div>
-
-        <div class="navigation__navbar-menuItems" id="menuItems">
-          <div class="navigation__navbar-firstItems">
-            <ul class="navigation__navbar-ul">
-              <li class="navigation__navbar-ul--item">Product
-                <img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrow">
-                <img src="assets/img/icon-arrow-light.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrowLight"></li>
-              <li class="navigation__navbar-ul--item">Company
-                <img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrow">
-                <img src="assets/img/icon-arrow-light.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrowLight"></li>
-              <li class="navigation__navbar-ul--item" id="connectBtn">Connect
-                <img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrow arrow">
-                <img src="assets/img/icon-arrow-light.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrowLight arrow"></li>
-            </ul>
-          </div>
-
-          <div class="navigation__navbar-connectItems" id="connectItems">
-            <ul class="navigation__navbar-ul">
-              <li class="navigation__navbar-ul--item">Contact</li>
-              <li class="navigation__navbar-ul--item">Newsletter</li>
-              <li class="navigation__navbar-ul--item">LinkedIn</li>
-            </ul>
-          </div>
-
-          <div class="navigation__navbar-line"></div>
-          
-          <div class="navigation__navbar-secondaryItems">
-            <ul class="navigation__navbar-ul">
-              <li class="navigation__navbar-ul--item">Login</li>
-              <li class="navigation__navbar-ul--item accented">Sign Up</li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <div class="container">
-      <div class="navigation__heading">
-        <h2 class="navigation__heading-main">A modern publishing platform</h2>
-        <h4 class="navigation__heading-secondary">Grow your audience and build your online brand</h4>
-
-        <div class="navigation__heading-buttons">
-          <a href="#" class="navigation__heading-buttons--item accent">Start for Free</a>
-          <a href="#" class="navigation__heading-buttons--item">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="aboutEditor">
-    <div class="aboutEditor__header">
-      <h3 class="aboutEditor__header-heading">Designed for the future</h3>
-    </div>
-    <div class="aboutEditor__contentArea">
-      <div class="aboutEditor__contentArea-right">
-        <img src="assets/img/illustration-editor-mobile.svg" alt="Illustration of a blog editor" class="aboutEditor__contentArea-image--mobile">
-        <img src="assets/img/illustration-editor-desktop.svg" alt="Illustration of a blog editor" class="aboutEditor__contentArea-image--desktop">
-      </div>
-      <div class="aboutEditor__contentArea-left">
-        <h3 class="aboutEditor__contentArea-heading">Introducing an extensible editor</h3>
-        <p class="aboutEditor__contentArea-paragraph">Blogr features an exceedingly intuitive interface which lets you foucs on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of emebeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
-        <h3 class="aboutEditor__contentArea-heading">Robust content management</h3>
-        <p class="aboutEditor__contentArea-paragraph">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality you're in full control.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="infrastructureSection">
-
-      <img src="/assets/img/illustration-phones.svg" alt="Illustration of phones" class="infrastructureSection__illustrationPhone">
-      <img src="/assets/img/bg-pattern-circles.svg" alt="Illustration of circles" class="infrastructureSection__illustrationCircle">
-    
-      <div class="infrastructureSection__textArea">
-      <h3 class="infrastructureSection__textAreaHeading">State of the Art Infrastructure</h3>
-      <p class="infrastructureSection__textAreaParagraph">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-    </div>
-  </section>
-<script src="assets/js/components/navigation.js"></script>
-</body>
-</html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Blogr Landing Page | Frontend mentor</title>
+	</head>
+	<body>
+		<section class="navigation">
+			<div class="container">
+				<nav class="navigation__navbar">
+					<div class="navigation__navbar-topItems">
+						<a href="index.html" class="navigation__navbar-homeBtn"><img src="assets/img/logo.svg" alt="Logo" class="navigation__navbar-logo" /></a>
+						<div id="togglerContainer">
+							<img src="assets/img/icon-hamburger.svg" alt="Hamburger icon" class="navigation__navbar-hamburger" id="hamburger-icon" />
+							<img src="assets/img/icon-close.svg" alt="Icon close" class="navigation__navbar-exit" id="close-icon" />
+						</div>
+					</div>
+ 
+					<div class="navigation__navbar-menuItems" id="menuItems">
+						<div class="navigation__navbar-firstItems">
+							<ul class="navigation__navbar-ul">
+								<li class="navigation__navbar-ul--item">
+									Product
+									<img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrow" />
+									<img src="assets/img/icon-arrow-light.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrowLight" />
+								</li>
+								<li class="navigation__navbar-ul--item">
+									Company
+									<img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrow" />
+									<img src="assets/img/icon-arrow-light.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrowLight" />
+								</li>
+								<li class="navigation__navbar-ul--item" id="connectBtn">
+									Connect
+									<img src="assets/img/icon-arrow-dark.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrow arrow" />
+									<img src="assets/img/icon-arrow-light.svg" alt="Icon arrow light" class="navigation__navbar-ul--arrowLight arrow" />
+								</li>
+							</ul>
+						</div>
+ 
+						<div class="navigation__navbar-connectItems" id="connectItems">
+							<ul class="navigation__navbar-ul">
+								<li class="navigation__navbar-ul--item">Contact</li>
+								<li class="navigation__navbar-ul--item">Newsletter</li>
+								<li class="navigation__navbar-ul--item">LinkedIn</li>
+							</ul>
+						</div>
+ 
+						<div class="navigation__navbar-line"></div>
+ 
+						<div class="navigation__navbar-secondaryItems">
+							<ul class="navigation__navbar-ul">
+								<li class="navigation__navbar-ul--item">Login</li>
+								<li class="navigation__navbar-ul--item accented">Sign Up</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+ 
+			<div class="container">
+				<div class="navigation__heading">
+					<h2 class="navigation__heading-main">A modern publishing platform</h2>
+					<h4 class="navigation__heading-secondary">Grow your audience and build your online brand</h4>
+ 
+					<div class="navigation__heading-buttons">
+						<a href="#" class="navigation__heading-buttons--item accent">Start for Free</a>
+						<a href="#" class="navigation__heading-buttons--item">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+ 
+		<section class="aboutEditor">
+			<div class="aboutEditor__header">
+				<h3 class="aboutEditor__header-heading">Designed for the future</h3>
+			</div>
+			<div class="aboutEditor__contentArea">
+				<div class="aboutEditor__contentArea-right">
+					<img src="assets/img/illustration-editor-mobile.svg" alt="Illustration of a blog editor" class="aboutEditor__contentArea-image--mobile" />
+					<img src="assets/img/illustration-editor-desktop.svg" alt="Illustration of a blog editor" class="aboutEditor__contentArea-image--desktop" />
+				</div>
+				<div class="aboutEditor__contentArea-left">
+					<h3 class="aboutEditor__contentArea-heading">Introducing an extensible editor</h3>
+					<p class="aboutEditor__contentArea-paragraph">
+						Blogr features an exceedingly intuitive interface which lets you foucs on one thing: creating content. The editor supports management of multiple blogs and allows easy
+						manipulation of emebeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+					</p>
+					<h3 class="aboutEditor__contentArea-heading">Robust content management</h3>
+					<p class="aboutEditor__contentArea-paragraph">
+						Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With
+						this functionality you're in full control.
+					</p>
+				</div>
+			</div>
+		</section>
+ 
+		<section class="infrastructureSection">
+			<img src="/assets/img/illustration-phones.svg" alt="Illustration of phones" class="infrastructureSection__illustrationPhone" />
+			<!-- <img src="/assets/img/bg-pattern-circles.svg" alt="Illustration of circles" class="infrastructureSection__illustrationCircle" /> -->
+ 
+			<div class="infrastructureSection__textArea">
+				<h3 class="infrastructureSection__textAreaHeading">State of the Art Infrastructure</h3>
+				<p class="infrastructureSection__textAreaParagraph">
+					With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your
+					readers are, keeping your site competitive.
+				</p>
+			</div>
+		</section>
+		<script src="assets/js/components/navigation.js"></script>
+	</body>
