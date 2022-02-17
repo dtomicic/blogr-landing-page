@@ -412,6 +412,7 @@ li {
   width: 100%;
   margin-top: 6.25rem;
   background-color: white;
+  z-index: 9999;
 }
 
 .aboutEditor__header {
@@ -527,6 +528,108 @@ li {
   }
   .aboutEditor__contentArea-paragraph {
     text-align: left;
+  }
+}
+
+.infrastructureSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2c2d3f;
+  margin-top: 8.75rem;
+  border-top-right-radius: 6.25rem;
+  border-bottom-left-radius: 6.25rem;
+  background-image: url("/assets/img/bg-pattern-circles.svg");
+  background-size: 36.5625rem;
+  background-repeat: no-repeat;
+  background-position: top -14.6875rem center;
+  position: relative;
+}
+
+.infrastructureSection__illustrationPhone {
+  position: absolute;
+  width: 100%;
+  max-width: 22.5rem;
+  top: -30%;
+}
+
+.infrastructureSection__illustrationCircle {
+  position: relative;
+  bottom: 13.75rem;
+  max-width: 22.6875rem;
+  width: 100%;
+  -o-object-position: 0 -20vh;
+     object-position: 0 -20vh;
+}
+
+.infrastructureSection__textArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 18.75rem;
+  font-family: "Ubuntu";
+  color: white;
+  margin: 12.5rem 0 6.25rem 0;
+}
+
+.infrastructureSection__textAreaHeading {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3.4375rem;
+  margin-bottom: 1.875rem;
+  width: 80%;
+}
+
+.infrastructureSection__textAreaParagraph {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  width: 80%;
+}
+
+@media (min-width: 900px) {
+  .infrastructureSection {
+    width: 100%;
+    background-position: left -8.75rem top -19.0625rem;
+    background-size: 40.625rem;
+  }
+  .infrastructureSection__illustrationCircle {
+    right: 21.875rem;
+    bottom: 2.5rem;
+  }
+  .infrastructureSection__illustrationPhone {
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 25.625rem;
+  }
+  .infrastructureSection__textArea {
+    width: 60%;
+    margin: 3.125rem 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    text-align: left;
+  }
+  .infrastructureSection__textAreaHeading {
+    font-size: 1.875rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

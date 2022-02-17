@@ -1,0 +1,86 @@
+.infrastructureSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $vd-gbluegrad;
+  margin-top: toRem(140);
+  border-top-right-radius: toRem(100);
+  border-bottom-left-radius: toRem(100);
+  background-image: url("/assets/img/bg-pattern-circles.svg");
+  background-size: toRem(585);
+  background-repeat: no-repeat;
+  background-position: top toRem(-235) center;
+  position: relative;
+ 
+  &__illustrationPhone {
+    position: absolute;
+    width: 100%;
+    max-width: toRem(360);
+    top: -30%;
+  }
+ 
+  &__illustrationCircle {
+    position: relative;
+    bottom: toRem(220);
+    max-width: toRem(363);
+    width: 100%;
+    object-position: 0 -20vh;
+  }
+ 
+  &__textArea {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    bottom: toRem(300);
+    font-family: $ubuntu;
+    color: $white;
+    margin: toRem(200) 0 toRem(100) 0;
+ 
+    &Heading {
+      font-size: toRem(40);
+      font-weight: 500;
+      line-height: toRem(55);
+      margin-bottom: toRem(30);
+      width: 80%;
+    }
+ 
+    &Paragraph {
+      font-size: toRem(13);
+      font-weight: 400;
+      width: 80%;
+    }
+  }
+}
+ 
+@media (min-width: $break-desktop) {
+  .infrastructureSection {
+    width: 100%;
+    background-position: left toRem(-140) top toRem(-305);
+    background-size: toRem(650);
+ 
+    &__illustrationCircle {
+      right: toRem(350);
+      bottom: toRem(40);
+    }
+ 
+    &__illustrationPhone {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: toRem(410);
+    }
+ 
+    &__textArea {
+      width: 60%;
+      margin: toRem(50) 0;
+      align-self: flex-end;
+      text-align: left;
+
+      &Heading {
+        font-size: toRem(30);
+      }
+    }
+  }
+}
