@@ -525,9 +525,11 @@ li {
   }
   .aboutEditor__contentArea-heading {
     text-align: left;
+    font-size: 1.25rem;
   }
   .aboutEditor__contentArea-paragraph {
     text-align: left;
+    font-size: 0.8125rem;
   }
 }
 
@@ -630,6 +632,113 @@ li {
   }
   .infrastructureSection__textAreaHeading {
     font-size: 1.875rem;
+  }
+}
+
+.toolingSection__mainArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 1.875rem;
+}
+
+.toolingSection__pictureArea {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toolingSection__pictureAreaDesktop {
+  display: none;
+}
+
+.toolingSection__pictureAreaMobile {
+  width: 100%;
+  max-width: 40.625rem;
+}
+
+.toolingSection__textArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 3.125rem;
+}
+
+.toolingSection__textAreaItem {
+  font-family: "Overpass";
+  text-align: center;
+  width: 80%;
+  margin-top: 1.25rem;
+  max-width: 18.75rem;
+}
+
+.toolingSection__textAreaItemHeading {
+  color: #1f3f5b;
+  font-weight: 600;
+  font-size: 1.6875rem;
+  margin-bottom: 1.25rem;
+}
+
+.toolingSection__textAreaItemParagraph {
+  font-weight: 300;
+  font-size: 0.9375rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .toolingSection__mainArea {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 6.25rem;
+  }
+  .toolingSection__pictureAreaMobile {
+    display: none;
+  }
+  .toolingSection__pictureAreaDesktop {
+    display: block;
+    width: 100%;
+    -o-object-position: -21vw;
+       object-position: -21vw;
+  }
+  .toolingSection__textAreaItem {
+    text-align: left;
+    margin-right: 11.25rem;
+  }
+  .toolingSection__textAreaItemHeading {
+    font-size: 1.25rem;
+  }
+  .toolingSection__textAreaItemParagraph {
+    line-height: 1.875rem;
+    min-width: 25rem;
+    font-size: 0.8125rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
