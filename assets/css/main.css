@@ -741,4 +741,103 @@ li {
     font-size: 0.8125rem;
   }
 }
+
+.footer {
+  background-color: #25252d;
+  border-top-right-radius: 6.25rem;
+  width: 100%;
+}
+
+.footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__headerLogo {
+  margin-top: 4.375rem;
+}
+
+.footer__menuArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: "Overpass";
+  font-weight: 300;
+  margin-top: 3.75rem;
+  gap: 3.75rem;
+  padding-bottom: 3.125rem;
+}
+
+.footer__menuAreaGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.625rem;
+}
+
+.footer__menuAreaGroupLink {
+  text-decoration: none;
+  color: #c8c8cb;
+}
+
+.footer__menuAreaGroupLink:hover {
+  text-decoration: underline;
+}
+
+.footer__menuAreaGroupHeader {
+  font-weight: 600;
+  margin-bottom: 0.9375rem;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.footer__menuAreaGroupItem {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer__header {
+    display: block;
+  }
+  .footer__headerLogo {
+    margin-top: 3.25rem;
+  }
+  .footer__menuArea {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    gap: 6.25rem;
+    margin-right: 5rem;
+  }
+  .footer__menuAreaGroupHeader {
+    font-size: 0.9375rem;
+  }
+  .footer__menuAreaGroupItem {
+    font-size: 0.8125rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
