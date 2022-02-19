@@ -90,10 +90,12 @@
 
     &-heading {
       text-align: left;
+      font-size: toRem(20);
     }
 
     &-paragraph {
       text-align: left;
+      font-size: toRem(13);
     }
   }
 }
