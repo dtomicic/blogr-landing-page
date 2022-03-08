@@ -23,6 +23,7 @@ In this project I had a bit of a problem with the design and pictures whose half
 ## Built with
 - HTML
 - SCSS
+- JavaScript
 
 # Live preview 
 [Click for live preview](https://blogr-landing-page-pi-three.vercel.app/)
